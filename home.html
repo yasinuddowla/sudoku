@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudoku</title>
+        <link href="includes/style.css" media="all" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+	<br>
+	<br>
+	<br>
+	<div id="main">
+		<audio  hidden="true" id="music"  autoplay loop>
+			<source src="includes/bob.mp3" type="audio/mpeg">
+		</audio>
+		
+		
+            <table id="sudoku_tab">
+               <caption id="caption">Sudoku Fever</caption>
+			<tbody>
+			
+			</tbody>			
+            </table>
+		<table id="choice">
+			<tr>
+			<td value="1" onclick="get_choice(this,this.innerHTML);">1</td>
+			<td value="2" onclick="get_choice(this,this.innerHTML);">2</td>
+			<td value="3" onclick="get_choice(this,this.innerHTML);">3</td>
+			</tr>
+			<tr>
+			<td value="4" onclick="get_choice(this,this.innerHTML);">4</td>
+			<td value="5" onclick="get_choice(this,this.innerHTML);">5</td>
+			<td value="6" onclick="get_choice(this,this.innerHTML);">6</td>
+			</tr>
+			<tr>
+			<td value="7" onclick="get_choice(this,this.innerHTML);">7</td>
+			<td value="8" onclick="get_choice(this,this.innerHTML);">8</td>
+			<td value="9" onclick="get_choice(this,this.innerHTML);">9</td>
+			</tr>
+		</table>
+		<div id="time">
+		00:00
+		</div>
+		<div id="errors">
+		Errors: 0
+		</div>
+		<img src="images/on.jpg" id="sound_icon" height="50" width="50" onclick="change_sound()"/>
+		
+		</div>
+		<script src="includes/script.js"></script>
+    </body>
+</html>
